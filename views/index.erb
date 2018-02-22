@@ -1,0 +1,9 @@
+<p>All the students!</p>
+<%  @records.each do |record| %>
+  <p>Name: <%= record.pretty_name() %></p>
+  <p>Student: <%= record.all() %></p>
+  <p>
+    <a href="/student-details/<%= record.id %>"> Show order</a>
+  </p>
+  <hr/>
+<% end %>
